@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Face Shape Detector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Face Shape Detector</h1>
+  <p>Upload a clear, frontal photo of your face with good lighting for best results.</p>
+  <input type="file" id="imageUpload" accept="image/*">
+  <div id="imageFrame">
+    <img id="uploadedImage" src="" alt="Uploaded Image" style="display: none;">
+    <canvas id="canvas" style="display: none;"></canvas>
+  </div>
+  <button id="checkButton" style="display: none;">Check Face Shape</button>
+  <div id="result"></div>
+  <script src="face-api.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
